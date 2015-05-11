@@ -4,6 +4,9 @@ import urllib
 """
 O objetivo deste crawler eh ler o campo "Preco" contido em algumas paginas de locais do Foursquare - foursquare.com
 Vale lembrar que nem todas as paginas tem este campo.
+
+Para rodar este script voce precisa da biblioteca PyQuery e pode instala-la atraves do comando: pip install pyquery
+https://pypi.python.org/pypi/pyquery
 """
 
 """
