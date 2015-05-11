@@ -1,4 +1,3 @@
-import simplejson as json
 from TwitterAPI import TwitterAPI
 
 """
