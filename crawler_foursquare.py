@@ -1,4 +1,4 @@
-import pyquery as pyquery
+from pyquery import PyQuery as pq
 import urllib
 
 """
@@ -20,9 +20,9 @@ Esse caminho pode ser visto pedindo para inspecionar o elemento desejado - no Ch
 No caso abaixo: #container > div > div.contents > div.wideColumn > div.venueInfoSection > div.venueAttributes > div.venueAttributesData > div.leftColumn > div:nth-child(2) > div.attrValue > span > span
 """
 def coleta_preco(url):
-	pq = pyquery.PyQuery(parse_pagina_html(url))
-	span = pq('div.contents div.wideColumn div.venueInfoSection div.venueAttributes div.venueAttributesData div.leftColumn div:nth-child(2) div.attrValue span span')
-	custo = span.text()#.count('$')
+	pagina = pq(parse_pagina_html(url))
+	caminho_css = 'div.contents div.wideColumn div.venueInfoSection div.venueAttributes div.venueAttributesData div.leftColumn div:nth-child(2) div.attrValue span span'
+	custo = pagina(caminho_css).text()#.count('$')
 	return custo
 
 def main():
