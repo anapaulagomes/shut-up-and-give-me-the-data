@@ -2,6 +2,11 @@ import pyquery as pyquery
 import urllib
 
 """
+O objetivo deste crawler eh ler o campo "Preco" contido em algumas paginas de locais do Foursquare - foursquare.com
+Vale lembrar que nem todas as paginas tem este campo.
+"""
+
+"""
 Utiliza a biblioteca urllib para ler todo o codigo de uma pagina html
 """
 def parse_pagina_html(url):
@@ -21,8 +26,8 @@ def coleta_preco(url):
 	return custo
 
 def main():
-	url = "https://pt.foursquare.com/v/porc%C4%81o/4b703378f964a520590b2de3"
-	#parse_pagina_html(url)#aqui o codigo de toda a pagina html
+	url = "https://pt.foursquare.com/v/porc%C4%81o/4b703378f964a520590b2de3"#pagina do Porcao, Rio de Janeiro
+	#print parse_pagina_html(url)#aqui o codigo de toda a pagina html
 	print coleta_preco(url)
 
 if __name__ == '__main__':
