@@ -9,8 +9,8 @@ Voce pode criar em: https://www.flickr.com/services/apps/create/
 
 """
 
-chave = "4f35fb147cdbb468994415064c16a5fa"
-segredo = "15ec63a9edec6623"
+chave = "XXXX"
+segredo = "XXXX"
 
 """
 Com as suas chaves de acesso, faz a autenticacao na API, passando tambem o formato de retorno das requisicoes.
