@@ -21,6 +21,7 @@ Exemplo: localizacao, termos, linguagem.
 https://dev.twitter.com/streaming/overview/request-parameters
 """
 parametros = {'track':'pizza'}
+stream = twitter_api.request('statuses/filter', parametros)
 
 """
 stream.status_code indica o codigo da conexao.
@@ -28,5 +29,5 @@ Os codigos podem ser visto aqui: https://dev.twitter.com/overview/api/response-c
 """
 print stream.status_code #status da conexao
 
-for item in twitter_api.request('statuses/filter', parametros):
+for item in stream.get_iterator():
     print item['text']#imprime o texto do tweet

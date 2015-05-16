@@ -15,8 +15,8 @@ Mais detalhes sobre o processo de autenticacao: http://developer.marvel.com/docu
 Mais detalhes sobre retornos da API: http://developer.marvel.com/documentation/apiresults
 """
 
-PUBLIC_KEY = '2124cb975af929a3d80d511bc07dac69'
-PRIVATE_KEY = '19d2d72ced9cdfcadcf1347626acfba120fc7bad'
+PUBLIC_KEY = 'XXXX'
+PRIVATE_KEY = 'XXXX'
 
 timestamp = int(time.time())#horario atual
 
